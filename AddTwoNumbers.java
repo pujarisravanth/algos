@@ -19,6 +19,7 @@ public class AddTwoNumbers {
         ListNode l2 = getListNode(nums2);
 
         ListNode result = addTwoNumbers(l1, l2);
+        printList(result);
     }
 
     public static ListNode getListNode(int[] nums) {
@@ -56,6 +57,14 @@ public class AddTwoNumbers {
         }
 
         return head.next;
+    }
+
+    public static void printList(ListNode head) {
+        while (head != null) {
+            System.out.print(head.val + " ");
+            head = head.next;
+        }
+        System.out.println();
     }
 }
 
