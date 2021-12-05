@@ -27,8 +27,10 @@ public class TwoSumSortedArray {
                 break;
             }
 
-            if (nums[i] + nums[j] > target) j--;
-            else i++;
+            if (nums[i] + nums[j] > target)
+                j--;
+            else
+                i++;
         }
 
         return res;
