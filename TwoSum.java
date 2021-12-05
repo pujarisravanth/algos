@@ -4,6 +4,8 @@ import java.util.HashMap;
  * Leet code problem
  * with always unique solution exists
  * need not to be a sorted array
+ * 
+ * Using; HashMap
  */
 public class TwoSum {
 
