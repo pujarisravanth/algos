@@ -4,11 +4,12 @@ import java.util.HashMap;
  * Leet code problem - Longest Substring Without Repeating Characters
  * https://leetcode.com/problems/longest-substring-without-repeating-characters/
  * 
- * Given a string, find the length of the longest substring without repeating characters.
+ * Given a string, find the length of the longest substring without repeating
+ * characters.
  */
 
 public class LongestSubstring {
-    
+
     public static void main(String[] args) {
         String s = "pwwkpew";
         System.out.println(lengthOfLongestSubstring(s));
@@ -30,6 +31,7 @@ public class LongestSubstring {
             max = Math.max(max, end - start + 1);
             end++;
         }
+
         return max;
     }
 }
