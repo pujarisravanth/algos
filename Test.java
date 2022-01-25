@@ -1,10 +1,19 @@
-public class Test {
-    
-    public static void main(String[] args) {
-        int a = 10;
-        int b = 20;
-        int c = 10;
+import java.util.ArrayList;
+import java.util.List;
 
-        System.out.println(a ^ b ^ c);
+public class Test {
+
+    public static void main(String[] args) {
+        int low = 100;
+        int high = 300;
+        System.out.println(sequentialDigits(low, high));
+    }
+
+    public static List<Integer> sequentialDigits(int low, int high) {
+        List<Integer> res = new ArrayList<>();
+
+        
+
+        return res;
     }
 }
