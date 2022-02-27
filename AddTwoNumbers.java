@@ -1,5 +1,5 @@
 /**
- * Leet code problem
+ * Leet code problem #2. Add Two Numbers
  * https://leetcode.com/problems/add-two-numbers/
  * 
  * You are given two non-empty linked lists representing two non-negative
@@ -8,6 +8,20 @@
  * single digit.
  * Add the two numbers and return it as a linked list.
  */
+
+class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode(int x) {
+        val = x;
+    }
+
+    ListNode(int x, ListNode next) {
+        val = x;
+        this.next = next;
+    }
+}
 
 public class AddTwoNumbers {
 
@@ -22,6 +36,7 @@ public class AddTwoNumbers {
         printList(result);
     }
 
+    // Creates a list node from array of numbers
     public static ListNode getListNode(int[] nums) {
         ListNode head = new ListNode(nums[0]);
         ListNode curr = head;
@@ -65,19 +80,5 @@ public class AddTwoNumbers {
             head = head.next;
         }
         System.out.println();
-    }
-}
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-    }
-
-    ListNode(int x, ListNode next) {
-        val = x;
-        this.next = next;
     }
 }

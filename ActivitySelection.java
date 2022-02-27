@@ -1,5 +1,23 @@
+
+/** 
+ * Select maximum number of activities that can be done by a sinlge person
+ */
+
 import java.util.Comparator;
 import java.util.PriorityQueue;
+
+class Pair {
+    public int first;
+    public int second;
+
+    Pair() {
+    }
+
+    Pair(int first, int second) {
+        this.first = first;
+        this.second = second;
+    }
+}
 
 public class ActivitySelection {
 
@@ -15,13 +33,14 @@ public class ActivitySelection {
             return 0;
         }
 
+        // Sort by finish time
         PriorityQueue<Pair> pq = new PriorityQueue<>(new Comparator<Pair>() {
             public int compare(Pair p1, Pair p2) {
                 return p1.second - p2.second;
             }
         });
 
-        for (int i =0; i < start.length; i++) {
+        for (int i = 0; i < start.length; i++) {
             pq.add(new Pair(start[i], finish[i]));
         }
 
@@ -31,6 +50,8 @@ public class ActivitySelection {
 
         while (!pq.isEmpty()) {
             p = pq.poll();
+
+            // Take the pair whose start time is less than before end time
             if (p.first >= end) {
                 activity_count++;
                 end = p.second;
@@ -38,18 +59,5 @@ public class ActivitySelection {
         }
 
         return activity_count;
-    }
-}
-
-class Pair {
-    public int first;
-    public int second;
-
-    Pair() {
-    }
-
-    Pair(int first, int second) {
-        this.first = first;
-        this.second = second;
     }
 }
