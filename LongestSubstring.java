@@ -2,9 +2,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Leetcode problem, #3 Longest Substring Without Repeating Characters
+ * Leetcode problem #3, Longest Substring Without Repeating Characters
  * https://leetcode.com/problems/longest-substring-without-repeating-characters/
  */
+
 public class LongestSubstring {
     public static void main(String[] args) {
         String str = "pwwkew";

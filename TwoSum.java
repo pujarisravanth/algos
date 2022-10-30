@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Leet code problem #1. Two Sum
+ * Leet code problem #1, Two Sum
  * https://leetcode.com/problems/two-sum/
  */
 public class TwoSum {
