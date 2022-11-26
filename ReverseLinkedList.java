@@ -1,3 +1,7 @@
+/**
+ * Leetcode problem #206, Reverse Linked List
+ * https://leetcode.com/problems/reverse-linked-list
+ */
 public class ReverseLinkedList {
     public static void main(String[] args) {
         ListNode list = prepareList(new int[] {1, 2, 3, 4, 5});
