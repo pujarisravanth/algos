@@ -4,7 +4,7 @@
  */
 public class LinkedListCycleHead {
     public static void main(String[] args) {
-        ListNode list = prepareList(new int[] {3, 2, 0, -4});
+        ListNode list = prepareList(new int[] { 3, 2, 0, -4 });
         createLoopAtPosition(list, 1);
         ListNode cycleHead = detectCycle(list);
         printCycleHeadPosition(list, cycleHead);
@@ -54,10 +54,12 @@ public class LinkedListCycleHead {
         while (fasrPtr != null && fasrPtr.next != null) {
             fasrPtr = fasrPtr.next.next;
             slowPtr = slowPtr.next;
-            if (fasrPtr == slowPtr) break;
+            if (fasrPtr == slowPtr)
+                break;
         }
 
-        if (fasrPtr == null || fasrPtr.next == null) return null;
+        if (fasrPtr == null || fasrPtr.next == null)
+            return null;
 
         ListNode ptr1 = slowPtr; // Also known as intersect;
         ListNode ptr2 = head;
@@ -76,7 +78,15 @@ class ListNode {
     int val;
     ListNode next;
 
-    ListNode() {}
-    ListNode(int val) {this.val = val;}
-    ListNode(int val, ListNode next) {this.val = val; this.next = next;}
+    ListNode() {
+    }
+
+    ListNode(int val) {
+        this.val = val;
+    }
+
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+    }
 }

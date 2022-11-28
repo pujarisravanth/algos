@@ -4,7 +4,7 @@
  */
 public class MiddleOfLinkedList {
     public static void main(String[] args) {
-        ListNode list = prepareList(new int[] {1, 2, 3, 4, 5, 6});
+        ListNode list = prepareList(new int[] { 1, 2, 3, 4, 5, 6 });
         ListNode midNode = middleNode(list);
         System.out.println(midNode.val);
     }
@@ -21,7 +21,7 @@ public class MiddleOfLinkedList {
 
     public static ListNode middleNode(ListNode head) {
         ListNode node = head;
-        while(node != null && node.next != null) {
+        while (node != null && node.next != null) {
             node = node.next.next;
             head = head.next;
         }
@@ -33,7 +33,15 @@ class ListNode {
     int val;
     ListNode next;
 
-    ListNode() {}
-    ListNode(int val) {this.val = val;}
-    ListNode(int val, ListNode next) {this.val = val; this.next = next;}
+    ListNode() {
+    }
+
+    ListNode(int val) {
+        this.val = val;
+    }
+
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+    }
 }

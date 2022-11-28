@@ -4,9 +4,9 @@
  */
 public class ReverseLinkedList {
     public static void main(String[] args) {
-        ListNode list = prepareList(new int[] {1, 2, 3, 4, 5});
+        ListNode list = prepareList(new int[] { 1, 2, 3, 4, 5 });
         ListNode resList = reverseList(list);
-        printList(resList); 
+        printList(resList);
     }
 
     public static ListNode prepareList(int[] arr) {
@@ -45,7 +45,15 @@ class ListNode {
     int val;
     ListNode next;
 
-    ListNode() {}
-    ListNode(int val) {this.val = val;}
-    ListNode(int val, ListNode next) {this.val = val; this.next = next;}
+    ListNode() {
+    }
+
+    ListNode(int val) {
+        this.val = val;
+    }
+
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+    }
 }
