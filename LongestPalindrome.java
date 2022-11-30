@@ -1,5 +1,3 @@
-import java.util.HashMap;
-
 /**
  * Leetcode problem #409, Longest Palindrome
  * https://leetcode.com/problems/longest-palindrome
