@@ -1,3 +1,8 @@
+/**
+ * Rotate an array by one place, should be inplace
+ * ex: {1, 2, 3, 4} -> {4, 1, 2, 3}
+ */
+
 import java.util.Arrays;
 
 public class RotateArrayByOne {

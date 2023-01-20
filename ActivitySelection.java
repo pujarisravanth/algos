@@ -1,4 +1,3 @@
-
 /** 
  * Select maximum number of activities that can be done by a sinlge person
  */

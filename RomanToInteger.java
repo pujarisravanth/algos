@@ -1,5 +1,4 @@
 import java.util.HashMap;
-import java.util.HashSet;
 
 /**
  * Leet Code Problem #13: Roman to Integer
