@@ -35,7 +35,3 @@ public class LongestSubstring {
         return max;
     }
 }
-
-        return length;
-    }
-}
