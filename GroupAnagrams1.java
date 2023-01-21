@@ -8,7 +8,7 @@ import java.util.List;
  * https://leetcode.com/problems/group-anagrams/
  * Time complexity of this is O(mnlog(n)), where m: length of strs array, n: avg length of each string in strs array
  */
-public class GroupAnagrams {
+public class GroupAnagrams1 {
     public static void main(String[] args) {
         String[] strs = { "eat", "tea", "tan", "ate", "nat", "bat" };
         List<List<String>> res = groupAnagram(strs);
