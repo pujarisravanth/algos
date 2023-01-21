@@ -3,7 +3,8 @@ import java.util.HashSet;
 /**
  * Leetcode problem #217, Contains Duplicate
  */
-public class ContainsDUplicate {
+
+public class ContainsDuplicate {
     public static void main(String[] args) {
         int[] nums = new int[] { 1, 2, 3, 1 };
         System.out.println(containsDuplicate(nums));
