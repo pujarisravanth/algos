@@ -1,5 +1,10 @@
 import java.util.Arrays;
 
+/**
+ * Leetcode problem #280, Wiggle Sort
+ * https://leetcode.com/problems/wiggle-sort/
+ */
+
 public class WiggleSort {
     public static void main(String[] args) {
         int[] nums = { 3, 5, 2, 1, 6, 4 };
