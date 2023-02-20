@@ -1,3 +1,5 @@
 a.out
 *.class
+.idea
+my_algos.iml
 run_script.sh
