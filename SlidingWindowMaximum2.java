@@ -1,11 +1,10 @@
 import java.util.ArrayDeque;
 import java.util.Arrays;
-import java.util.Deque;
 
 /**
  * Leetcode problem #239, Sliding Window Maximum
  * https://leetcode.com/problems/sliding-window-maximum/
- * 
+ * Using double ended linkedlist (deque), time complexity will be O(n)
  */
 public class SlidingWindowMaximum2 {
     public static void main(String[] args) {
