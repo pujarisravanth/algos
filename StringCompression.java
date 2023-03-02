@@ -1,5 +1,10 @@
 import java.util.Arrays;
 
+/**
+ * Leetcode problem #443, String Compression
+ * https://leetcode.com/problems/string-compression/
+ */
+
 public class StringCompression {
     public static void main(String[] args) {
         char[] chars = { 'a', 'a', 'b', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c' };
