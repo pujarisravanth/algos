@@ -9,35 +9,35 @@ public class KokoEatingBananas {
 
     public static void main(String[] args) {
         int[] piles = {30, 11, 23, 4, 20};
-        int h = 5;
+        int h = 10;
         System.out.println(minEatingSpeed(piles, h));
     }
 
     public static int minEatingSpeed(int[] piles, int h) {
-        int right = Arrays.stream(piles).max().getAsInt();
-        int left = 1;
+        int l = 1, r = 1;
+        for (int pile: piles) {
+            r = Math.max(pile, r);
+        }
 
-        while (left <= right) {
-            int mid = left + (right - left) / 2;
-            if (canEatInTime(piles, h, mid)) {
-                right = mid - 1;
+        while (l < r) {
+            int mid = l + (r - l) / 2;
+            int timeTaken = timeSpent(piles, mid);
+            if (timeTaken <= h) {
+                r = mid;
             } else {
-                left = mid + 1;
+                l = mid + 1;
             }
         }
 
-        return left;
+        return r;
     }
 
-    private static boolean canEatInTime(int[] piles, int h, int k) {
-        int hours = 0;
-        for (int pile : piles) {
-            hours += pile / k;
-            if (pile % k != 0) {
-                hours++;
-            }
+    public static int timeSpent(int[] piles, int k) {
+        int total = 0;
+        for (int pile: piles) {
+            total += (pile - 1) / k + 1;
         }
 
-        return hours <= h;
+        return total;
     }
 }
