@@ -9,17 +9,17 @@ public class KthMissingNumber {
     }
 
     public static int findKthpositive(int[] arr, int k) {
-        int len = 0, prev = 0;
-        for (int num : arr) {
-            if (num != prev + 1) {
-                if (len + num - prev - 1 >= k) {
-                    break;
-                }
-                len += num - prev - 1;
+        int l = 0, r = arr.length - 1;
+        while (l <= r) {
+            int mid = l + (r - l) / 2;
+            if (arr[mid] - mid - 1 < k) {
+                l = mid + 1;
+            } else {
+                r = mid - 1;
             }
-            prev = num;
         }
 
-        return prev + (k - len);
+        // return arr[r] + k - (arr[r] - r - 1)
+        return k + r + 1;
     }
 }
