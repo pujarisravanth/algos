@@ -1,6 +1,10 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * Leetcode problem #543, Diameter of Binary Tree
+ * https://leetcode.com/problems/diameter-of-binary-tree/
+ */
 public class DiameterOfBinaryTree {
     private int diameter;
 
