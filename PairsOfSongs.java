@@ -1,9 +1,8 @@
-import java.util.HashMap;
-
-public class Test {
-
+public class PairsOfSongs {
     public static void main(String[] args) {
         int[] nums = { 30, 20, 150, 100, 40 };
+        int cnt = numPairsDivisibleBy60(nums);
+        System.out.println(cnt);
     }
 
     public static int numPairsDivisibleBy60(int[] time) {
