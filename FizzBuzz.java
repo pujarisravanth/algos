@@ -1,6 +1,10 @@
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Leetcode problem #412, Fizz Buzz
+ * https://leetcode.com/problems/fizz-buzz/description/
+ */
 public class FizzBuzz {
     public static void main(String[] args) {
         int n = 15;
