@@ -1,48 +1,48 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Leetcode problem #54, Spriral Matrix
- */
 public class SpiralMatrix {
-    public static void main(String[] args) {
-        int[][] matrix = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 } };
-        List<Integer> res = spiralOrder(matrix);
-        System.out.println(res);
-    }
 
-    public static List<Integer> spiralOrder(int[][] matrix) {
-        List<Integer> list = new ArrayList<>();
-        int rows = matrix.length;
-        int cols = matrix[0].length;
+  public static void main(String[] args) {
+    int[][] matrix = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 } };
+    List<Integer> res = spiralOrder(matrix);
+    System.out.println(res);
+  }
 
-        // boundaries
-        int up = 0, left = 0, right = cols - 1, down = rows - 1;
+  public static List<Integer> spiralOrder(int[][] matrix) {
+    List<Integer> res = new ArrayList<>();
+    int rows = matrix.length;
+    int cols = matrix[0].length;
 
-        while (list.size() < rows * cols) {
-            for (int i = left; i <= right; i++) {
-                list.add(matrix[up][i]);
-            }
-            up++;
+    int up = 0, down = rows - 1, left = 0, right = cols - 1;
 
-            for (int i = up; i <= down; i++) {
-                list.add(matrix[i][right]);
-            }
-            right--;
+    while (res.size() < rows * cols) {
+      for (int i = left; i <= right; i++) {
+        res.add(matrix[up][i]);
+      }
 
-            if (right > left && up < down) {
-                for (int i = right; i >= left; i--) {
-                    list.add(matrix[down][i]);
-                }
-                down--;
+      for (int i = up + 1; i <= down; i++) {
+        res.add(matrix[i][right]);
+      }
 
-                for (int i = down; i >= up; i--) {
-                    list.add(matrix[i][left]);
-                }
-                left++;
-            }
+      if (up != down) {
+        for (int i = right - 1; i >= left; i--) {
+          res.add(matrix[down][i]);
         }
+      }
 
-        return list;
+      if (left != right) {
+        for (int i = down - 1; i > up; i--) {
+          res.add(matrix[i][left]);
+        }
+      }
+
+      up++;
+      down--;
+      left++;
+      right--;
     }
+
+    return res;
+  }
 }
