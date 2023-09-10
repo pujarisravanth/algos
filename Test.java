@@ -1,26 +1,38 @@
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.PriorityQueue;
 
 public class Test {
 
     public static void main(String[] args) {
-        int[] nums = { 30, 20, 150, 100, 40 };
+        int[][] points = { { 10, 16 }, { 2, 8 }, { 1, 6 }, { 7, 12 } };
     }
 
-    public static int numPairsDivisibleBy60(int[] time) {
-        int cnt = 0;
-        int[] arr = new int[60];
+    public static String testFunc(String a, String b) {
+        int n = a.length(), m = b.length();
+        if (n < m)
+            return testFunc(b, a);
 
-        for (int num : time) {
-            num = num % 60;
-            if (num == 0) {
-                cnt += arr[0];
-            } else {
-                cnt += arr[60 - num];
+        StringBuilder sb = new StringBuilder();
+        int carry = 0, j = m - 1;
+
+        for (int i = n - 1; i >= 0; i--) {
+            if (a.charAt(i) == '1') {
+                ++carry;
+            }
+            if (j > -1 && b.charAt(j) == '1') {
+                ++carry;
+                j--;
             }
 
-            arr[num]++;
+            sb.append((carry % 2 == 1) ? '1' : '0');
+            carry /= 2;
         }
 
-        return cnt;
+        if (carry == 1) {
+            sb.append('1');
+        }
+
+        return sb.reverse().toString();
     }
 }

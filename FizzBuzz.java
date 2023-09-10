@@ -18,7 +18,7 @@ public class FizzBuzz {
             if (i % 3 == 0 && i % 5 == 0) {
                 list.add("FizzBuzz");
             } else if (i % 3 == 0) {
-                list.add("Fizz");`
+                list.add("Fizz");
             } else if (i % 5 == 0) {
                 list.add("Buzz");
             } else {
