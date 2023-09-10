@@ -3,13 +3,15 @@
  * https://leetcode.com/problems/median-of-two-sorted-arrays/
  * 
  * There are two sorted arrays nums1 and nums2 of size m and n respectively.
+ * Time complexity: O(log(min(m, n)))
+ * Space complexity: O(1)
  */
 
 public class MedianOfTwoSortedArrays {
 
     public static void main(String[] args) {
-        int[] nums1 = {1, 3};
-        int[] nums2 = {2, 4};
+        int[] nums1 = { 1, 3 };
+        int[] nums2 = { 2, 4 };
 
         double median = findMedianSortedArrays(nums1, nums2);
         System.out.println("Median: " + median);
@@ -19,7 +21,7 @@ public class MedianOfTwoSortedArrays {
         if (nums1.length > nums2.length) {
             return findMedianSortedArrays(nums2, nums1);
         }
-        
+
         int m = nums1.length;
         int n = nums2.length;
 
@@ -41,11 +43,9 @@ public class MedianOfTwoSortedArrays {
                     return (Math.max(minNums1, minNums2) + Math.min(maxNums1, maxNums2)) / 2.0;
                 }
                 return Math.max(minNums1, minNums2);
-            }
-            else if (minNums1 > maxNums2) {
+            } else if (minNums1 > maxNums2) {
                 end = partition1 - 1;
-            }
-            else {
+            } else {
                 start = partition1 + 1;
             }
         }
