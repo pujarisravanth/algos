@@ -2,11 +2,8 @@
  * Leet code problem #2. Add Two Numbers
  * https://leetcode.com/problems/add-two-numbers/
  * 
- * You are given two non-empty linked lists representing two non-negative
- * integers.
- * The digits are stored in reverse order and each of their nodes contain a
- * single digit.
- * Add the two numbers and return it as a linked list.
+ * Time complexity: O(max(m ,n))
+ * Space complexity: O(1)
  */
 
 class ListNode {

@@ -3,10 +3,11 @@ import java.util.HashMap;
 /**
  * Leet code problem
  * https://leetcode.com/problems/two-sum/
- * with always unique solution exists
- * need not to be a sorted array
+ * with exactly one solution
  * 
- * Using; HashMap
+ * Using: hash map
+ * Time complexity: O(n)
+ * Space complexity: O(n)
  */
 public class TwoSum {
 
@@ -18,18 +19,16 @@ public class TwoSum {
     }
 
     public static int[] twoSum(int[] nums, int target) {
-        int[] res = new int[2];
         HashMap<Integer, Integer> hmap = new HashMap<>();
 
         for (int i = 0; i < nums.length - 1; i++) {
-            if (hmap.containsKey(target - nums[i])) {
-                res[0] = hmap.get(target - nums[i]);
-                res[1] = i;
-                break;
+            int complement = target - nums[i];
+            if (hmap.containsKey(complement)) {
+                return new int[] { hmap.get(complement), i };
             }
             hmap.put(nums[i], i);
         }
 
-        return res;
+        return new int[] {};
     }
 }

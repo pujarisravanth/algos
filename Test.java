@@ -1,38 +1,51 @@
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.PriorityQueue;
 
 public class Test {
 
     public static void main(String[] args) {
-        int[][] points = { { 10, 16 }, { 2, 8 }, { 1, 6 }, { 7, 12 } };
+
     }
 
-    public static String testFunc(String a, String b) {
-        int n = a.length(), m = b.length();
-        if (n < m)
-            return testFunc(b, a);
+    public static ListNode testFunc(ListNode l1, ListNode l2) {
+        ListNode res = new ListNode();
+        ListNode head = res;
+        int carry = 0;
 
-        StringBuilder sb = new StringBuilder();
-        int carry = 0, j = m - 1;
+        while (l1 != null || l2 != null) {
+            int x = (l1 != null) ? l1.val : 0;
+            int y = (l2 != null) ? l2.val : 0;
+            int sum = x + y + carry;
 
-        for (int i = n - 1; i >= 0; i--) {
-            if (a.charAt(i) == '1') {
-                ++carry;
-            }
-            if (j > -1 && b.charAt(j) == '1') {
-                ++carry;
-                j--;
-            }
+            carry = sum / 10;
+            res.next = new ListNode(sum % 10);
 
-            sb.append((carry % 2 == 1) ? '1' : '0');
-            carry /= 2;
+            res = res.next;
+            if (l1 != null)
+                l1 = l1.next;
+            if (l2 != null)
+                l2 = l2.next;
         }
 
-        if (carry == 1) {
-            sb.append('1');
+        if (carry != 0) {
+            res.next = new ListNode(carry);
         }
 
-        return sb.reverse().toString();
+        return head.next;
+    }
+}
+
+class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode() {
+    }
+
+    ListNode(int val) {
+        this.val = val;
+    }
+
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
     }
 }
