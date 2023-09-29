@@ -1,17 +1,23 @@
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-public class Test {
-
+/**
+ * Leet code problem #452, Minimum Number of Arrows to Burst Balloons
+ * https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/
+ * 
+ * Time complexity: O(nLogn)
+ * Space complexity: O(n)
+ */
+public class MinArrowsShot {
     public static void main(String[] args) {
         int[][] points = { { 10, 16 }, { 2, 8 }, { 1, 6 }, { 7, 12 } };
-        System.out.println(testFunc(points));
+        System.out.println(findMinArrowShots(points));
     }
 
-    public static int testFunc(int[][] points) {
+    public static int findMinArrowShots(int[][] points) {
         int n = points.length;
-        if (n == 0)
-            return 0;
+        if (n <= 1)
+            return n;
 
         PriorityQueue<int[]> queue = new PriorityQueue<>(new Comparator<int[]>() {
             @Override
@@ -20,11 +26,11 @@ public class Test {
             }
         });
 
-        for (int[] a : points) {
-            queue.add(a);
+        for (int[] p : points) {
+            queue.add(p);
         }
 
-        int count = 1;
+        int count = 0;
         int[] p = queue.poll();
         int end = p[1];
 
