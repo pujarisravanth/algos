@@ -1,41 +1,39 @@
-import java.util.Comparator;
-import java.util.PriorityQueue;
+
 
 public class Test {
 
     public static void main(String[] args) {
-        int[][] points = { { 10, 16 }, { 2, 8 }, { 1, 6 }, { 7, 12 } };
-        System.out.println(testFunc(points));
+        String a = "111", b = "11";
+        System.out.println(testFunc(a, b));
     }
 
-    public static int testFunc(int[][] points) {
-        int n = points.length;
-        if (n == 0)
-            return 0;
+    public static String testFunc(String a, String b) {
+        int n = a.length();
+        int m = b.length();
 
-        PriorityQueue<int[]> queue = new PriorityQueue<>(new Comparator<int[]>() {
-            @Override
-            public int compare(int[] a, int[] b) {
-                return a[1] - b[1];
-            }
-        });
-
-        for (int[] a : points) {
-            queue.add(a);
+        if (n < m) {
+            testFunc(b, a);
         }
 
-        int count = 1;
-        int[] p = queue.poll();
-        int end = p[1];
+        int carry = 0;
+        int j = m - 1;
+        StringBuilder sb = new StringBuilder();
 
-        while (!queue.isEmpty()) {
-            p = queue.poll();
-            if (p[0] > end) {
-                count++;
-                end = p[1];
-            }
+        for (int i = n - 1; i > -1; i--) {
+            int sum = carry;
+            if (a.charAt(i) == '1')
+                sum++;
+            if (j > -1 && b.charAt(j--) == '1')
+                sum++;
+
+            sb.append(sum % 2 == 0 ? '0' : '1');
+            carry = sum / 2;
         }
 
-        return count;
+        if (carry == 1) {
+            sb.append('1');
+        }
+
+        return sb.reverse().toString();
     }
 }

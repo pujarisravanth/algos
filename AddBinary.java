@@ -1,6 +1,9 @@
 /**
  * Leetcode problem #67, Add Binary
  * https://leetcode.com/problems/add-binary/
+ * 
+ * Time complexity: O(max(n,m))
+ * Space complexity: O(max(n,m))
  */
 
 public class AddBinary {
