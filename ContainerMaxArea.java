@@ -1,6 +1,9 @@
 /**
  * Leetcode problem #11, Container With Most Water
  * https://leetcode.com/problems/container-with-most-water/description/
+ * 
+ * Time complexity: O(n)
+ * Space complexity: O(1)
  */
 public class ContainerMaxArea {
     public static void main(String[] args) {

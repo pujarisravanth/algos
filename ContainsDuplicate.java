@@ -3,6 +3,9 @@ import java.util.HashSet;
 /**
  * Leetcode problem #217, Contains Duplicate
  * https://leetcode.com/problems/contains-duplicate/
+ * 
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
  */
 
 public class ContainsDuplicate {

@@ -4,6 +4,9 @@ import java.util.Queue;
 /**
  * Leetcode problem #543, Diameter of Binary Tree
  * https://leetcode.com/problems/diameter-of-binary-tree/
+ * 
+ * Time complexity: O(n)
+ * Space complexity: O(n)
  */
 public class DiameterOfBinaryTree {
     private int diameter;

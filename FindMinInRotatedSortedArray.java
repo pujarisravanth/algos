@@ -1,6 +1,9 @@
 /**
  * Leetcode problem #153, Find Minimum in Rotated Sorted Array
  * https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+ * 
+ * Time complexity: O(Log(n))
+ * Space complexity: O(1)
  */
 public class FindMinInRotatedSortedArray {
     public static void main(String[] args) {
