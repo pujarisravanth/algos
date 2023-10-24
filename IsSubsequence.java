@@ -1,6 +1,8 @@
 /**
  * Leetcode problem #392, Is Subsequence
  * https://leetcode.com/problems/is-subsequence
+ * 
+ * Time complexity: O(n)
  */
 public class IsSubsequence {
     public static void main(String[] args) {

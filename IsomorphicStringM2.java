@@ -4,7 +4,7 @@ import java.util.HashMap;
  * Leetcode problem #205, Isomorphic Strings (Approach 2)
  * https://leetcode.com/problems/isomorphic-strings
  */
-public class IsomorphicString2 {
+public class IsomorphicStringM2 {
     public static void main(String[] args) {
         String s = "paper", t = "title";
         boolean isIsomorphic = isIsomorphic(s, t);

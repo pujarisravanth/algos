@@ -3,8 +3,11 @@ import java.util.Arrays;
 /**
  * Leetcode problem #205, Isomorphic Strings (Approach 1)
  * https://leetcode.com/problems/isomorphic-strings
+ * 
+ * Time complexity: O(n)
+ * Space complexity: O(1)
  */
-public class IsomorphicString1 {
+public class IsomorphicStringM1 {
     public static void main(String[] args) {
         String s = "paper", t = "title";
         boolean isIsomorphic = isIsomorphic(s, t);
