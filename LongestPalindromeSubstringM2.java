@@ -3,7 +3,7 @@ import java.util.Arrays;
 /**
  * Brute force way of computing LPS array.
  */
-public class LongestPalindromeSubstring1 {
+public class LongestPalindromeSubstringM2 {
 
     public static void main(String[] args) {
         String s = "abcbabcbabcba";

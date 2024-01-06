@@ -8,7 +8,7 @@ import java.util.Set;
  * Time complexity: O(n)
  * Space complexity: O(n)
  */
-public class ContainsDuplicate2 {
+public class ContainsDuplicateM2 {
     public static void main(String[] args) {
         int[] nums = new int[] { 1, 2, 3, 1 };
         int k = 3;
