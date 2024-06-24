@@ -26,6 +26,9 @@ public class GroupAnagramsM2 {
             for (char c : str.toCharArray()) {
                 hash[c - 'a']++;
             }
+
+            // We are not using any separators, bcz we using characters instead of integer
+            // count
             String key = new String(hash);
 
             if (!map.containsKey(key)) {

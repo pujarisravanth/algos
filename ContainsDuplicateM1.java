@@ -8,7 +8,7 @@ import java.util.HashSet;
  * Space Complexity: O(n)
  */
 
-public class ContainsDuplicate {
+public class ContainsDuplicateM1 {
     public static void main(String[] args) {
         int[] nums = new int[] { 1, 2, 3, 1 };
         System.out.println(containsDuplicate(nums));
