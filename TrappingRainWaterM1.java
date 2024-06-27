@@ -3,7 +3,7 @@
  * https://leetcode.com/problems/trapping-rain-water/
  * Usind DP solution
  */
-public class TrappingRainWater1 {
+public class TrappingRainWaterM1 {
     public static void main(String[] args) {
         int[] height = { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
         System.out.println(trap(height));
@@ -12,6 +12,7 @@ public class TrappingRainWater1 {
     public static int trap(int[] height) {
         int n = height.length;
 
+        // Finding lmax and water that can be stored with lmax
         int lMax = 0;
         int[] lSum = new int[n];
         for (int i = 0; i < n; i++) {
@@ -19,6 +20,7 @@ public class TrappingRainWater1 {
             lSum[i] = lMax - height[i];
         }
 
+        // Finding rmax and water that can be stored with rmax
         int rMax = 0;
         int[] rSum = new int[n];
         for (int i = n - 1; i >= 0; i--) {

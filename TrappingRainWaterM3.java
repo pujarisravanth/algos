@@ -15,14 +15,13 @@ public class TrappingRainWaterM3 {
         int total = 0;
 
         while (l < r) {
-            lMax = Math.max(lMax, height[l]);
-            rMax = Math.max(rMax, height[r]);
-
             if (height[l] <= height[r]) {
-                total += Math.min(lMax, rMax) - height[l];
+                lMax = Math.max(lMax, height[l]);
+                total += lMax - height[l];
                 l++;
             } else {
-                total += Math.min(rMax, lMax) - height[r];
+                rMax = Math.max(rMax, height[r]);
+                total += rMax - height[r];
                 r--;
             }
         }

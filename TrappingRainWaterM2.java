@@ -3,7 +3,7 @@ import java.util.Stack;
 /**
  * Leetcode problem #42, Trapping Rain Water
  * https://leetcode.com/problems/trapping-rain-water/
- * Usind stack solution
+ * Using stack solution
  */
 public class TrappingRainWaterM2 {
     public static void main(String[] args) {
