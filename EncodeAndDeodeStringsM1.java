@@ -18,45 +18,45 @@ public class EncodeAndDeodeStringsM1 {
         System.out.println(encodedString);
         System.out.println(codec.decode(encodedString));
     }
-}
 
-class Codec {
+    static class Codec {
 
-    // Encode list of strings to a single string
-    public String encode(List<String> strs) {
-        StringBuilder sb = new StringBuilder();
+        // Encode list of strings to a single string
+        public String encode(List<String> strs) {
+            StringBuilder sb = new StringBuilder();
 
-        for (String s : strs) {
-            sb.append(s.replace("/", "//")).append("/:");
-        }
-
-        return sb.toString();
-    }
-
-    // Decodes a single string to a list of strings
-    public List<String> decode(String s) {
-        List<String> strs = new ArrayList<>();
-
-        StringBuilder sb = new StringBuilder();
-        int len = s.length();
-        int i = 0;
-
-        while (i < s.length()) {
-            // If we encounter delimiter /:
-            if (i + 1 < len && s.charAt(i) == '/' && s.charAt(i + 1) == ':') {
-                strs.add(sb.toString());
-
-                sb = new StringBuilder();
-                i += 2;
-            } else if (i + 1 < len && s.charAt(i) == '/' && s.charAt(i + 1) == '/') {
-                sb.append('/');
-                i += 2;
-            } else {
-                sb.append(s.charAt(i));
-                i++;
+            for (String s : strs) {
+                sb.append(s.replace("/", "//")).append("/:");
             }
+
+            return sb.toString();
         }
 
-        return strs;
+        // Decodes a single string to a list of strings
+        public List<String> decode(String s) {
+            List<String> strs = new ArrayList<>();
+
+            StringBuilder sb = new StringBuilder();
+            int len = s.length();
+            int i = 0;
+
+            while (i < s.length()) {
+                // If we encounter delimiter /:
+                if (i + 1 < len && s.charAt(i) == '/' && s.charAt(i + 1) == ':') {
+                    strs.add(sb.toString());
+
+                    sb = new StringBuilder();
+                    i += 2;
+                } else if (i + 1 < len && s.charAt(i) == '/' && s.charAt(i + 1) == '/') {
+                    sb.append('/');
+                    i += 2;
+                } else {
+                    sb.append(s.charAt(i));
+                    i++;
+                }
+            }
+
+            return strs;
+        }
     }
 }

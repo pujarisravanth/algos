@@ -52,23 +52,23 @@ public class NaryTreePreOrderTraversal {
             preOrderOfNode(child, list);
         }
     }
-}
 
-class Node {
-    public int val;
-    public List<Node> children;
+    static class Node {
+        public int val;
+        public List<Node> children;
 
-    public Node() {
-        this.children = new ArrayList<>();
-    }
+        public Node() {
+            this.children = new ArrayList<>();
+        }
 
-    public Node(int val) {
-        this.val = val;
-        this.children = new ArrayList<>();
-    }
+        public Node(int val) {
+            this.val = val;
+            this.children = new ArrayList<>();
+        }
 
-    public Node(int val, List<Node> children) {
-        this.val = val;
-        this.children = children;
+        public Node(int val, List<Node> children) {
+            this.val = val;
+            this.children = children;
+        }
     }
 }

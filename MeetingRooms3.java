@@ -55,14 +55,14 @@ public class MeetingRooms3 {
 
         return maxIndex;
     }
-}
 
-class Pair {
-    int endTime;
-    int room;
+    static class Pair {
+        int endTime;
+        int room;
 
-    Pair(int end, int room) {
-        this.endTime = end;
-        this.room = room;
+        Pair(int end, int room) {
+            this.endTime = end;
+            this.room = room;
+        }
     }
 }

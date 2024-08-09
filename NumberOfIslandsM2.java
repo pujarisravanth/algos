@@ -56,14 +56,14 @@ public class NumberOfIslandsM2 {
             queue.add(new Pair(p.r - 1, p.c));
         }
     }
-}
 
-class Pair {
-    public int r;
-    public int c;
+    static class Pair {
+        public int r;
+        public int c;
 
-    public Pair(int r, int c) {
-        this.r = r;
-        this.c = c;
+        public Pair(int r, int c) {
+            this.r = r;
+            this.c = c;
+        }
     }
 }

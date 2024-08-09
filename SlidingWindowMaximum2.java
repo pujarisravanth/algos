@@ -38,14 +38,14 @@ public class SlidingWindowMaximum2 {
         }
         deq.addLast(p);
     }
-}
 
-class Pair {
-    int value;
-    int index;
+    static class Pair {
+        int value;
+        int index;
 
-    Pair(int val, int i) {
-        this.value = val;
-        this.index = i;
+        Pair(int val, int i) {
+            this.value = val;
+            this.index = i;
+        }
     }
 }
