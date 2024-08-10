@@ -37,6 +37,7 @@ public class MinimumArrows {
 
         while (!pq.isEmpty()) {
             p = pq.poll();
+
             if (p[0] > end) {
                 arrows_count++;
                 end = p[1];

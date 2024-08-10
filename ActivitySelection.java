@@ -8,19 +8,6 @@
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-class Pair {
-    public int first;
-    public int second;
-
-    Pair() {
-    }
-
-    Pair(int first, int second) {
-        this.first = first;
-        this.second = second;
-    }
-}
-
 public class ActivitySelection {
 
     public static void main(String[] args) {
@@ -61,5 +48,18 @@ public class ActivitySelection {
         }
 
         return activity_count;
+    }
+
+    static class Pair {
+        public int first;
+        public int second;
+
+        Pair() {
+        }
+
+        Pair(int first, int second) {
+            this.first = first;
+            this.second = second;
+        }
     }
 }
