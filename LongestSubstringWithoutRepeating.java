@@ -9,10 +9,10 @@ import java.util.HashMap;
  * Space complexity: O(n)
  */
 
-public class LongestSubstring {
+public class LongestSubstringWithoutRepeating {
 
     public static void main(String[] args) {
-        String s = "pwwkpew";
+        String s = "abba";
         System.out.println(lengthOfLongestSubstring(s));
     }
 
@@ -23,7 +23,8 @@ public class LongestSubstring {
         HashMap<Character, Integer> map = new HashMap<>();
         for (int i = 0; i < s.length(); i++) {
             if (map.containsKey(s.charAt(i))) {
-                start = map.get(s.charAt(i)) + 1;
+                int index = map.get(s.charAt(i));
+                start = index >= start ? index + 1 : start;
             }
             map.put(s.charAt(i), i);
             len = Math.max(i - start + 1, len);

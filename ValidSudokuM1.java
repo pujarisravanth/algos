@@ -24,8 +24,11 @@ public class ValidSudokuM1 {
     public static boolean isValidSudoku(char[][] board) {
         int n = 9;
 
+        @SuppressWarnings("unchecked")
         HashSet<Character>[] rowSet = new HashSet[n];
+        @SuppressWarnings("unchecked")
         HashSet<Character>[] colSet = new HashSet[n];
+        @SuppressWarnings("unchecked")
         HashSet<Character>[] boxSet = new HashSet[n];
 
         for(int i = 0; i < n; i++) {
