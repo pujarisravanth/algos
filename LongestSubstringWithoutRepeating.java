@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 /**
- * Leet code problem - Longest Substring Without Repeating Characters
+ * Leet code problem #3, Longest Substring Without Repeating Characters
  * https://leetcode.com/problems/longest-substring-without-repeating-characters/
  * 
  * Using: hashmap, Sliding window
