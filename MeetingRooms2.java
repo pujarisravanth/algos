@@ -6,7 +6,7 @@ import java.util.PriorityQueue;
  * Leetcode problem #253, Meeting Rooms II
  * https://leetcode.com/problems/meeting-rooms-ii/description/
  */
-public class MeetingRoom2 {
+public class MeetingRooms2 {
     public static void main(String[] args) {
         int[][] intervals = { { 0, 30 }, { 5, 10 }, { 15, 20 } };
         int rooms = minMeetingRooms(intervals);
