@@ -1,3 +1,5 @@
+package intervals;
+
 import java.util.Arrays;
 
 /**

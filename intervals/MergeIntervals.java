@@ -1,3 +1,5 @@
+package intervals;
+
 import java.util.Arrays;
 import java.util.LinkedList;
 
@@ -16,6 +18,7 @@ public class MergeIntervals {
         Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
         LinkedList<int[]> list = new LinkedList<>();
         int[] current = intervals[0];
+
         for (int i = 1; i < intervals.length; i++) {
             if (current[1] >= intervals[i][0]) {
                 current[1] = Math.max(current[1], intervals[i][1]);
@@ -25,6 +28,7 @@ public class MergeIntervals {
             }
         }
         list.add(current);
+
         return list.toArray(new int[list.size()][]);
     }
 }

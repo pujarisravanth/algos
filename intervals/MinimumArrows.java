@@ -1,3 +1,5 @@
+package intervals;
+
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
@@ -23,6 +25,7 @@ public class MinimumArrows {
         PriorityQueue<int[]> pq = new PriorityQueue<>(new Comparator<int[]>() {
             @Override
             public int compare(int[] a, int[] b) {
+                // this it will help in avoiding integer overflow
                 return (a[1] > b[1]) ? 1 : -1;
             }
         });
