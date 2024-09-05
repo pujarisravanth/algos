@@ -1,5 +1,3 @@
-package intervals;
-
 import java.util.PriorityQueue;
 
 /**

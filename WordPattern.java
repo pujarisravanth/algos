@@ -2,8 +2,8 @@ import java.util.HashMap;
 
 /**
  * Leetcode problem #290, Word Pattern
+ * https://leetcode.com/problems/word-pattern/
  */
-
 public class WordPattern {
     public static void main(String[] args) {
         String pattern = "ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccdd";

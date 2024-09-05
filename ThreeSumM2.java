@@ -24,7 +24,7 @@ public class ThreeSumM2 {
         HashMap<Integer, Integer> map = new HashMap<>();
 
         for (int i = 0; i < nums.length; i++) {
-            // If the already taken as base element, do process that
+            // If already taken as base element, don't process that
             if (dup.add(nums[i])) {
                 for (int j = i + 1; j < nums.length; j++) {
                     int compliment = -nums[i] - nums[j];
