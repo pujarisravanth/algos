@@ -7,7 +7,7 @@ public class ValidParentheses {
         System.out.println(isValid(s));
     }
 
-    public static boolean isValid(String s) {
+    public static boolean isValid(String s) {   
         if (s.length() == 0) return true;
 
         Stack<Character> st = new Stack<>();
@@ -25,7 +25,7 @@ public class ValidParentheses {
                 else return false;
             }
         }
-
+  
         return st.empty();
     }
 }

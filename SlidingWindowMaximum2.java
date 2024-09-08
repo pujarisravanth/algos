@@ -21,10 +21,16 @@ public class SlidingWindowMaximum2 {
             addElement(deq, new Pair(nums[i], i));
         }
 
+        // Starting from the last element which belongs to the window
+        // Or we can say starting the windows
         for (int i = k - 1; i < nums.length; i++) {
+
+            // Removinf any element to the left if it is outside window
+            // Mostly, may be only one will be there, just for safety
             while (deq.size() > 0 && deq.peekFirst().index < i - k + 1) {
                 deq.removeFirst();
             }
+
             addElement(deq, new Pair(nums[i], i));
             res[i - k + 1] = deq.getFirst().value;
         }
@@ -32,6 +38,7 @@ public class SlidingWindowMaximum2 {
         return res;
     }
 
+    // We store the deq, such that the values are in decreasing order
     public static void addElement(ArrayDeque<Pair> deq, Pair p) {
         while (deq.size() > 0 && deq.getLast().value < p.value) {
             deq.removeLast();
