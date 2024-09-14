@@ -3,19 +3,20 @@ import java.util.HashSet;
 /**
  * Leetcode problem #36, Valid Sudoku
  * https://leetcode.com/problems/valid-sudoku/
+ * Using HashSets
  */
 public class ValidSudokuM1 {
     public static void main(String[] args) {
         char[][] board = {
-            {'5','3','.','.','7','.','.','.','.'},
-            {'6','.','.','1','9','5','.','.','.'},
-            {'.','9','8','.','.','.','.','6','.'},
-            {'8','.','.','.','6','.','.','.','3'},
-            {'4','.','.','8','.','3','.','.','1'},
-            {'7','.','.','.','2','.','.','.','6'},
-            {'.','6','.','.','.','.','2','8','.'},
-            {'.','.','.','4','1','9','.','.','5'},
-            {'.','.','.','.','8','.','.','7','9'}
+                { '5', '3', '.', '.', '7', '.', '.', '.', '.' },
+                { '6', '.', '.', '1', '9', '5', '.', '.', '.' },
+                { '.', '9', '8', '.', '.', '.', '.', '6', '.' },
+                { '8', '.', '.', '.', '6', '.', '.', '.', '3' },
+                { '4', '.', '.', '8', '.', '3', '.', '.', '1' },
+                { '7', '.', '.', '.', '2', '.', '.', '.', '6' },
+                { '.', '6', '.', '.', '.', '.', '2', '8', '.' },
+                { '.', '.', '.', '4', '1', '9', '.', '.', '5' },
+                { '.', '.', '.', '.', '8', '.', '.', '7', '9' }
         };
 
         System.out.println(isValidSudoku(board));
@@ -31,7 +32,7 @@ public class ValidSudokuM1 {
         @SuppressWarnings("unchecked")
         HashSet<Character>[] boxSet = new HashSet[n];
 
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             rowSet[i] = new HashSet<Character>();
             colSet[i] = new HashSet<Character>();
             boxSet[i] = new HashSet<Character>();
