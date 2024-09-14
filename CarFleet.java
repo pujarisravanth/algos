@@ -21,7 +21,10 @@ public class CarFleet {
             arr[i] = new int[] { position[i], speed[i] };
         }
 
+        // Sorting with the position
         Arrays.sort(arr, (a, b) -> b[0] - a[0]);
+
+        // Similar to a stack containing increasing time
         for (int i = 0; i < position.length; i++) {
             double time = (target - arr[i][0]) * 1.0 / arr[i][1];
             if (time > max) {
