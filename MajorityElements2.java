@@ -2,11 +2,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Leet code problem, #229: Majority Element II
- * Given: Majority element occurs more than [ n / 3 ] times
+ * Leetcode problem #229, Majority Element II
  * https://leetcode.com/problems/majority-element-ii/
+ * Given: Majority element occurs more than [ n / 3 ] times
  */
-
 public class MajorityElements2 {
 
     public static void main(String[] args) {

@@ -5,7 +5,6 @@
  * Time complexity: O(n)
  * Space complexity: O(1)
  */
-
 public class FindPivot {
     public static void main(String[] args) {
         int[] nums = new int[] { 1, 7, 3, 6, 5, 6 };

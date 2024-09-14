@@ -4,7 +4,6 @@ import java.util.PriorityQueue;
  * Leetcode problem #295, Find Median from Data Stream
  * https://leetcode.com/problems/find-median-from-data-stream/
  */
-
 public class MedianFromDataStream {
     public static void main(String[] args) {
         MedianFinder medianFinder = new MedianFinder();

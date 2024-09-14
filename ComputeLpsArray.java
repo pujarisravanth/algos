@@ -4,7 +4,6 @@ import java.util.Arrays;
  * LPS - Longest prefix which is also a suffix
  * Used in KMP algorithm
  */
-
 public class ComputeLpsArray {
     
     public static void main(String[] args) {

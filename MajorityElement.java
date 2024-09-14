@@ -1,9 +1,9 @@
 /**
- * Leet code problem, #169: Majority Element
+ * Leet code problem #169, Majority Element
+ * https://leetcode.com/problems/majority-element/
  * Given: Majority element occurs more than half of the time
  * Using Boyer-Moore majority voting algorithm
  */
-
 public class MajorityElement {
 
     public static void main(String[] args) {

@@ -1,3 +1,7 @@
+/**
+ * Leetcode problem #242, Valid Anagram
+ * https://leetcode.com/problems/valid-anagram/
+ */
 public class ValidAnangram {
     public static void main(String[] args) {
         String s = "anagram";

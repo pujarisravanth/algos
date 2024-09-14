@@ -11,7 +11,6 @@ import java.util.List;
  * Time complexity: O(mn)
  * Space complexity: O(mn)
  */
-
 public class GroupAnagramsM2 {
     public static void main(String[] args) {
         String[] strs = { "eat", "tea", "tan", "ate", "nat", "bat" };

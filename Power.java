@@ -2,7 +2,6 @@
  * Leetcode problem #50, Pow(x, n)
  * https://leetcode.com/problems/powx-n/
  */
-
 public class Power {
     public static void main(String[] args) {
         double res = myPow(2.0, -2147483648);

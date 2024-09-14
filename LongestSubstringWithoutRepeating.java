@@ -8,7 +8,6 @@ import java.util.HashMap;
  * Time complexity: O(n)
  * Space complexity: O(n)
  */
-
 public class LongestSubstringWithoutRepeating {
 
     public static void main(String[] args) {

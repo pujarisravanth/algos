@@ -1,3 +1,7 @@
+/**
+ * Leetcode problem #69, Sqrt(x)
+ * https://leetcode.com/problems/sqrtx/
+ */
 public class SquareRoot {
     public static void main(String[] args) {
         System.out.println(mySqrt(600));

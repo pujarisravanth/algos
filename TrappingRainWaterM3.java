@@ -1,7 +1,7 @@
 /**
  * Leetcode problem #42, Trapping Rain Water
  * https://leetcode.com/problems/trapping-rain-water/
- * Usind two pinter solution
+ * Usind two pointer solution
  */
 public class TrappingRainWaterM3 {
     public static void main(String[] args) {

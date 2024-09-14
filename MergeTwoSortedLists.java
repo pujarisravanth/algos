@@ -2,7 +2,6 @@
  * Leetcode problem #21, Merge Two Sorted Lists
  * https://leetcode.com/problems/merge-two-sorted-lists
  */
-
 public class MergeTwoSortedLists {
     public static void main(String[] args) {
         ListNode list1 = prepareList(new int[] { 1, 2, 4 });

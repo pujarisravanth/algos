@@ -8,7 +8,6 @@ import java.util.List;
  * Leetcode problem #47, Permutations II
  * https://leetcode.com/problems/permutations-ii/
  */
-
 public class Permutations2 {
     public static void main(String[] args) {
         int[] nums = new int[] { 1, 1, 2, 2 };

@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 /**
  * Leetcode problems #435, Non-overlapping Intervals
- * https://leetcode.com/problems/non-overlapping-intervals/description/
+ * https://leetcode.com/problems/non-overlapping-intervals/
  */
 public class NonOverlappingIntervals {
     public static void main(String[] args) {

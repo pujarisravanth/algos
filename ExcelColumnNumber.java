@@ -1,8 +1,7 @@
 /**
- * Leet code problem, #171: Excel Sheet Column Number
+ * Leetcode problem #171, Excel Sheet Column Number
  * https://leetcode.com/problems/excel-sheet-column-number/
  */
-
 public class ExcelColumnNumber {
 
     public static void main(String[] args) {

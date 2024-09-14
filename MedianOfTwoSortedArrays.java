@@ -6,7 +6,6 @@
  * Time complexity: O(log(min(m, n)))
  * Space complexity: O(1)
  */
-
 public class MedianOfTwoSortedArrays {
 
     public static void main(String[] args) {

@@ -1,5 +1,9 @@
 import java.util.HashMap;
 
+/**
+ * Leetcode problem #146, LRU Cache
+ * https://leetcode.com/problems/lru-cache/
+ */
 public class LRUCacheM2 {
 
     public static void main(String[] args) {

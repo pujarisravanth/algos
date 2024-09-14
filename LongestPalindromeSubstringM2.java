@@ -1,6 +1,8 @@
 import java.util.Arrays;
 
 /**
+ * Leetcode problem #5, Longest Palindromic Substring
+ * https://leetcode.com/problems/longest-palindromic-substring/
  * Brute force way of computing LPS array.
  */
 public class LongestPalindromeSubstringM2 {

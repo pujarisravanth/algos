@@ -7,7 +7,6 @@ import java.util.HashSet;
  * Time Complexity: O(n)
  * Space Complexity: O(n)
  */
-
 public class ContainsDuplicateM1 {
     public static void main(String[] args) {
         int[] nums = new int[] { 1, 2, 3, 1 };

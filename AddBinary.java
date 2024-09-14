@@ -5,7 +5,6 @@
  * Time complexity: O(max(n,m))
  * Space complexity: O(max(n,m))
  */
-
 public class AddBinary {
     public static void main(String[] args) {
         String a = "111", b = "11";

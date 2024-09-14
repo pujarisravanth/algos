@@ -2,6 +2,10 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.PriorityQueue;
 
+/**
+ * Leetcode problem #347, Top K Frequent Elements
+ * https://leetcode.com/problems/top-k-frequent-elements/
+ */
 public class TopKFrequentElements {
     public static void main(String[] args) {
         int[] nums = { 1, 1, 1, 2, 2, 3 };

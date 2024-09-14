@@ -1,6 +1,10 @@
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+/**
+ * Leetcode problem #146, LRU Cache
+ * https://leetcode.com/problems/lru-cache/
+ */
 public class LRUCacheM1 {
     public static void main(String[] args) {
         LRUCache cache = new LRUCache(2);

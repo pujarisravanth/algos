@@ -1,3 +1,7 @@
+/**
+ * Leetcode problem #486, Predict the Winner
+ * https://leetcode.com/problems/predict-the-winner/
+ */
 public class PredictTheWinnerM2 {
     public static void main(String[] args) {
         int[] nums = { 1, 5, 233, 7 };

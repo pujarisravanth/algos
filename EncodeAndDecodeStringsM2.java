@@ -10,7 +10,6 @@ import java.util.List;
  * delimiter
  * eg: For [Hello, World] ==> 5/:Hello5/:World as encode
  */
-
 public class EncodeAndDecodeStringsM2 {
 
     public static void main(String[] args) {

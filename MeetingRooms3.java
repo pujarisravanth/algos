@@ -5,7 +5,6 @@ import java.util.PriorityQueue;
  * Leetode problem #2402, Meeting Rooms III
  * https://leetcode.com/problems/meeting-rooms-iii/
  */
-
 public class MeetingRooms3 {
     public static void main(String[] args) {
         int[][] meetings = { { 48, 49 }, { 22, 30 }, { 13, 31 }, { 31, 46 }, { 37, 46 }, { 32, 36 }, { 25, 36 },

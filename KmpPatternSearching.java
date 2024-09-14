@@ -2,7 +2,6 @@
  * KMP Pattern Searching
  * Also known as Knuth-Morris-Pratt algorithm
  */
-
 public class KmpPatternSearching {
 
     public static void main(String[] args) {

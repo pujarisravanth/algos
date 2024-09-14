@@ -3,7 +3,7 @@ import java.util.List;
 
 /**
  * Leetcode problem #589, N-ary Tree Preorder Traversal
- * https://leetcode.com/problems/n-ary-tree-preorder-traversal
+ * https://leetcode.com/problems/n-ary-tree-preorder-traversal/
  */
 public class NaryTreePreOrderTraversal {
     public static void main(String[] args) {

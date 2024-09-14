@@ -2,7 +2,6 @@
  * Leetcode problem #1137, N-th Tribonacci Number
  * https://leetcode.com/problems/n-th-tribonacci-number/
  */
-
 public class NthTribonacci {
     public static void main(String[] args) {
         int n = 25;
