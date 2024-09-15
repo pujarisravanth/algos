@@ -13,13 +13,15 @@ public class IsSubsequence {
 
     public static boolean isSubsequence(String s, String t) {
         int i = 0, j = 0;
+        char[] sArr = s.toCharArray();
+        char[] tArr = t.toCharArray();
 
-        while (i < s.length() && j < t.length()) {
-            if (s.charAt(i) == t.charAt(j))
+        while (i < sArr.length && j < tArr.length) {
+            if (sArr[i] == tArr[j])
                 i++;
             j++;
         }
 
-        return i == s.length();
+        return i == sArr.length;
     }
 }
