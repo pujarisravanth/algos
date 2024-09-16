@@ -1,3 +1,7 @@
+/**
+ * Leetcode problem #1004, Max Consecutive Ones III
+ * https://leetcode.com/problems/max-consecutive-ones-iii/
+ */
 public class MaxConsecutiveOnes3 {
     public static void main(String[] args) {
         int[] nums = new int[] { 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1 };
