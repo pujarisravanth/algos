@@ -18,25 +18,14 @@ public class AsteroidCollision {
             if (asteroids[i] > 0) {
                 asteroids[++t] = asteroids[i];
             } else {
-                boolean addElement = true;
-                while (t >= 0 && asteroids[t] > 0) {
-                    int val = Integer.compare(Math.abs(asteroids[t]), Math.abs(asteroids[i]));
-                    if (val == 0) {
-                        t--;
-                        addElement = false;
-                        break;
-                    }
-
-                    if (val > 0) {
-                        addElement = false;
-                        break;
-                    } else {
-                        t--;
-                    }
+                while (t >= 0 && asteroids[t] > 0 && (asteroids[t] < -asteroids[i])) {
+                    t--;
                 }
 
-                if (addElement) {
+                if (t < 0 || asteroids[t] < 0) {
                     asteroids[++t] = asteroids[i];
+                } else if (asteroids[t] == -asteroids[i]) {
+                    t--;
                 }
             }
         }
