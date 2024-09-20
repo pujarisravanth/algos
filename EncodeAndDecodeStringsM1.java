@@ -8,7 +8,7 @@ import java.util.List;
  * 
  * Using Escaping, '/' as escape character, with delimiter as "/:"
  */
-public class EncodeAndDeodeStringsM1 {
+public class EncodeAndDecodeStringsM1 {
 
     public static void main(String[] args) {
         List<String> strs = new ArrayList<>(Arrays.asList("Hello", "World"));
