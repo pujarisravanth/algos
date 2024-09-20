@@ -1,6 +1,12 @@
 import java.util.Arrays;
 
-public class Test {
+/**
+ * Similar to leetcode problem #901, Online Stock Span
+ * https://leetcode.com/problems/online-stock-span/
+ * But in here, we should return the spanning array
+ * Since this is a Monotonic stack problem, we don't need to use stack
+ */
+public class OnlineStockSpan2 {
     public static void main(String[] args) {
         int[] prices = new int[] { 100, 80, 60, 70, 60, 75, 85, 100 };
         int[] res = findStockSpan(prices);
