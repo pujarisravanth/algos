@@ -4,6 +4,7 @@ import java.util.Arrays;
  * Leetcode problem #739, Daily Temperatures
  * https://leetcode.com/problems/daily-temperatures/
  * Without using stack/dequeue etc. any extra space other than result
+ * Since this is a Monotonic Stack
  * 
  * Basically check what is the greater value for the next one, which becomes a
  * potential to this one, if not checks what is greater to that one. so on ..
